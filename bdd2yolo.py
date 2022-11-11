@@ -59,9 +59,9 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--bdd_file', help='path of the bbd json file',
-                        default='../data/bdd100k_labels_images_train.json', required=False)
+                        default='../data/bdd100k_labels_images_train.json', required=True)
     parser.add_argument('--yolo_dir', help='directory where yolo labels should be generated',
-                        default='../data/labels_yolo/train', required=False)
+                        default='../data/labels_yolo/train', required=True)
     args = parser.parse_args()
 
     main(args)
